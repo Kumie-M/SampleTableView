@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		445130EA2762FEA200DDCF9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445130E92762FEA200DDCF9D /* AppDelegate.swift */; };
 		445130EC2762FEA200DDCF9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445130EB2762FEA200DDCF9D /* SceneDelegate.swift */; };
-		445130EE2762FEA200DDCF9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445130ED2762FEA200DDCF9D /* ViewController.swift */; };
+		445130EE2762FEA200DDCF9D /* SaunaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445130ED2762FEA200DDCF9D /* SaunaViewController.swift */; };
 		445130F12762FEA200DDCF9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 445130EF2762FEA200DDCF9D /* Main.storyboard */; };
 		445130F32762FEA300DDCF9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 445130F22762FEA300DDCF9D /* Assets.xcassets */; };
 		445130F62762FEA300DDCF9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 445130F42762FEA300DDCF9D /* LaunchScreen.storyboard */; };
 		445131012762FEA300DDCF9D /* SampleTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445131002762FEA300DDCF9D /* SampleTableViewTests.swift */; };
 		4451310B2762FEA300DDCF9D /* SampleTableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4451310A2762FEA300DDCF9D /* SampleTableViewUITests.swift */; };
 		4451310D2762FEA300DDCF9D /* SampleTableViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4451310C2762FEA300DDCF9D /* SampleTableViewUITestsLaunchTests.swift */; };
+		4451311E276302BA00DDCF9D /* NSObject+.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4451311D276302BA00DDCF9D /* NSObject+.swift.swift */; };
+		445131212763036100DDCF9D /* SaunaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4451311F2763036100DDCF9D /* SaunaTableViewCell.swift */; };
+		445131222763036100DDCF9D /* SaunaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 445131202763036100DDCF9D /* SaunaTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,7 @@
 		445130E62762FEA200DDCF9D /* SampleTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		445130E92762FEA200DDCF9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		445130EB2762FEA200DDCF9D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		445130ED2762FEA200DDCF9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		445130ED2762FEA200DDCF9D /* SaunaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaunaViewController.swift; sourceTree = "<group>"; };
 		445130F02762FEA200DDCF9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		445130F22762FEA300DDCF9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		445130F52762FEA300DDCF9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,9 @@
 		445131062762FEA300DDCF9D /* SampleTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleTableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4451310A2762FEA300DDCF9D /* SampleTableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTableViewUITests.swift; sourceTree = "<group>"; };
 		4451310C2762FEA300DDCF9D /* SampleTableViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTableViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4451311D276302BA00DDCF9D /* NSObject+.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+.swift.swift"; sourceTree = "<group>"; };
+		4451311F2763036100DDCF9D /* SaunaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaunaTableViewCell.swift; sourceTree = "<group>"; };
+		445131202763036100DDCF9D /* SaunaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SaunaTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +105,12 @@
 		445130E82762FEA200DDCF9D /* SampleTableView */ = {
 			isa = PBXGroup;
 			children = (
+				4451311C2763024100DDCF9D /* Model */,
+				4451311B2763023E00DDCF9D /* View */,
+				4451311A2763023B00DDCF9D /* Controller */,
+				445131192763023800DDCF9D /* Extensions */,
 				445130E92762FEA200DDCF9D /* AppDelegate.swift */,
 				445130EB2762FEA200DDCF9D /* SceneDelegate.swift */,
-				445130ED2762FEA200DDCF9D /* ViewController.swift */,
-				445130EF2762FEA200DDCF9D /* Main.storyboard */,
 				445130F22762FEA300DDCF9D /* Assets.xcassets */,
 				445130F42762FEA300DDCF9D /* LaunchScreen.storyboard */,
 				445130F72762FEA300DDCF9D /* Info.plist */,
@@ -125,6 +133,39 @@
 				4451310C2762FEA300DDCF9D /* SampleTableViewUITestsLaunchTests.swift */,
 			);
 			path = SampleTableViewUITests;
+			sourceTree = "<group>";
+		};
+		445131192763023800DDCF9D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4451311D276302BA00DDCF9D /* NSObject+.swift.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4451311A2763023B00DDCF9D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				445130ED2762FEA200DDCF9D /* SaunaViewController.swift */,
+				445130EF2762FEA200DDCF9D /* Main.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4451311B2763023E00DDCF9D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4451311F2763036100DDCF9D /* SaunaTableViewCell.swift */,
+				445131202763036100DDCF9D /* SaunaTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4451311C2763024100DDCF9D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +274,7 @@
 			files = (
 				445130F62762FEA300DDCF9D /* LaunchScreen.storyboard in Resources */,
 				445130F32762FEA300DDCF9D /* Assets.xcassets in Resources */,
+				445131222763036100DDCF9D /* SaunaTableViewCell.xib in Resources */,
 				445130F12762FEA200DDCF9D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,8 +300,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				445130EE2762FEA200DDCF9D /* ViewController.swift in Sources */,
+				445130EE2762FEA200DDCF9D /* SaunaViewController.swift in Sources */,
 				445130EA2762FEA200DDCF9D /* AppDelegate.swift in Sources */,
+				4451311E276302BA00DDCF9D /* NSObject+.swift.swift in Sources */,
+				445131212763036100DDCF9D /* SaunaTableViewCell.swift in Sources */,
 				445130EC2762FEA200DDCF9D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
