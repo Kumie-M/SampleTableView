@@ -31,6 +31,16 @@ final class SaunaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        showAlert()
+    }
+    
+    private func showAlert() {
+        let alert = UIAlertController(title: "ようこそ！", message: "全国のサウナ情報をGETしよう！", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
 }
 
 extension SaunaViewController: UITableViewDataSource {
