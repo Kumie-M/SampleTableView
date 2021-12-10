@@ -34,19 +34,46 @@ final class SaunaViewController: UIViewController {
 }
 
 extension SaunaViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        areaTitles.count
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        areaTitles[section]
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        10
+        guard let saunaNameList = saunaNames[areaTitles[section]] else { return 0 }
+        return saunaNameList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: SaunaTableViewCell.className) as? SaunaTableViewCell else {
             return SaunaTableViewCell() }
+        cell.delegate = self
+        if let saunaNameList = saunaNames[areaTitles[indexPath.section]] {
+            cell.setSaunaName = saunaNameList[indexPath.row]
+        }
+        if indexPath.row == 0 {
+            cell.isHiddenCrown = false
+        }
+        
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        transition(viewControllerName: CellTapViewController.className)
     }
 }
 
 extension SaunaViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         100
+    }
+}
+
+extension SaunaViewController: SaunaTableViewCellDelegate {
+    func didTapButton() {
+        transition(viewControllerName: ButtonTapViewController.className)
     }
 }

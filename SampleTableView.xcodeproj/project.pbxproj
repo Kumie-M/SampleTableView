@@ -19,6 +19,11 @@
 		4451311E276302BA00DDCF9D /* NSObject+.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4451311D276302BA00DDCF9D /* NSObject+.swift.swift */; };
 		445131212763036100DDCF9D /* SaunaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4451311F2763036100DDCF9D /* SaunaTableViewCell.swift */; };
 		445131222763036100DDCF9D /* SaunaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 445131202763036100DDCF9D /* SaunaTableViewCell.xib */; };
+		4451312427630CFE00DDCF9D /* ButtonTapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4451312327630CFE00DDCF9D /* ButtonTapViewController.swift */; };
+		4451312627630D0D00DDCF9D /* ButtonTapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4451312527630D0D00DDCF9D /* ButtonTapViewController.storyboard */; };
+		4451312827630F0F00DDCF9D /* CellTapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4451312727630F0F00DDCF9D /* CellTapViewController.swift */; };
+		4451312A27630F1700DDCF9D /* CellTapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4451312927630F1700DDCF9D /* CellTapViewController.storyboard */; };
+		4451312C276312D900DDCF9D /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4451312B276312D900DDCF9D /* UIViewController+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,11 @@
 		4451311D276302BA00DDCF9D /* NSObject+.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+.swift.swift"; sourceTree = "<group>"; };
 		4451311F2763036100DDCF9D /* SaunaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaunaTableViewCell.swift; sourceTree = "<group>"; };
 		445131202763036100DDCF9D /* SaunaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SaunaTableViewCell.xib; sourceTree = "<group>"; };
+		4451312327630CFE00DDCF9D /* ButtonTapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTapViewController.swift; sourceTree = "<group>"; };
+		4451312527630D0D00DDCF9D /* ButtonTapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ButtonTapViewController.storyboard; sourceTree = "<group>"; };
+		4451312727630F0F00DDCF9D /* CellTapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTapViewController.swift; sourceTree = "<group>"; };
+		4451312927630F1700DDCF9D /* CellTapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CellTapViewController.storyboard; sourceTree = "<group>"; };
+		4451312B276312D900DDCF9D /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				4451311D276302BA00DDCF9D /* NSObject+.swift.swift */,
+				4451312B276312D900DDCF9D /* UIViewController+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -148,6 +159,10 @@
 			children = (
 				445130ED2762FEA200DDCF9D /* SaunaViewController.swift */,
 				445130EF2762FEA200DDCF9D /* Main.storyboard */,
+				4451312327630CFE00DDCF9D /* ButtonTapViewController.swift */,
+				4451312527630D0D00DDCF9D /* ButtonTapViewController.storyboard */,
+				4451312727630F0F00DDCF9D /* CellTapViewController.swift */,
+				4451312927630F1700DDCF9D /* CellTapViewController.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -274,6 +289,8 @@
 			files = (
 				445130F62762FEA300DDCF9D /* LaunchScreen.storyboard in Resources */,
 				445130F32762FEA300DDCF9D /* Assets.xcassets in Resources */,
+				4451312A27630F1700DDCF9D /* CellTapViewController.storyboard in Resources */,
+				4451312627630D0D00DDCF9D /* ButtonTapViewController.storyboard in Resources */,
 				445131222763036100DDCF9D /* SaunaTableViewCell.xib in Resources */,
 				445130F12762FEA200DDCF9D /* Main.storyboard in Resources */,
 			);
@@ -302,8 +319,11 @@
 			files = (
 				445130EE2762FEA200DDCF9D /* SaunaViewController.swift in Sources */,
 				445130EA2762FEA200DDCF9D /* AppDelegate.swift in Sources */,
+				4451312C276312D900DDCF9D /* UIViewController+.swift in Sources */,
 				4451311E276302BA00DDCF9D /* NSObject+.swift.swift in Sources */,
+				4451312827630F0F00DDCF9D /* CellTapViewController.swift in Sources */,
 				445131212763036100DDCF9D /* SaunaTableViewCell.swift in Sources */,
+				4451312427630CFE00DDCF9D /* ButtonTapViewController.swift in Sources */,
 				445130EC2762FEA200DDCF9D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

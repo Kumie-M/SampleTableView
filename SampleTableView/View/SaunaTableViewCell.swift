@@ -7,18 +7,43 @@
 
 import UIKit
 
-class SaunaTableViewCell: UITableViewCell {
+protocol SaunaTableViewCellDelegate {
+    func didTapButton()
+}
+
+final class SaunaTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var saunaImageView: UIImageView!
-    @IBOutlet weak var saunaNameLabel: UILabel!
-    @IBOutlet weak var locationButton: UIButton!
-    @IBOutlet weak var crownImageView: UIImageView!
+    var locationBlock: (() -> Void)?
+    
+    var delegate: SaunaTableViewCellDelegate?
+    
+    var setSaunaName = "" {
+        didSet {
+            saunaNameLabel.text = setSaunaName
+        }
+    }
+    
+    var isHiddenCrown = true {
+        didSet {
+            crownImageView.isHidden = isHiddenCrown
+        }
+    }
+    
+    override func prepareForReuse() {
+        crownImageView.isHidden = true
+    }
+    
+    @IBOutlet private weak var saunaImageView: UIImageView!
+    @IBOutlet private weak var saunaNameLabel: UILabel!
+    @IBOutlet private weak var locationButton: UIButton!
+    @IBOutlet private weak var crownImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        crownImageView.isHidden = true
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+    
+    @IBAction func didTapLocationButton(_ sender: UIButton) {
+        delegate?.didTapButton()
     }
 }
