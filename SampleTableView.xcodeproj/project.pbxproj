@@ -24,6 +24,7 @@
 		4451312827630F0F00DDCF9D /* CellTapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4451312727630F0F00DDCF9D /* CellTapViewController.swift */; };
 		4451312A27630F1700DDCF9D /* CellTapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4451312927630F1700DDCF9D /* CellTapViewController.storyboard */; };
 		4451312C276312D900DDCF9D /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4451312B276312D900DDCF9D /* UIViewController+.swift */; };
+		4451312E276317A400DDCF9D /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4451312D276317A400DDCF9D /* UserDefaultsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		4451312727630F0F00DDCF9D /* CellTapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTapViewController.swift; sourceTree = "<group>"; };
 		4451312927630F1700DDCF9D /* CellTapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CellTapViewController.storyboard; sourceTree = "<group>"; };
 		4451312B276312D900DDCF9D /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		4451312D276317A400DDCF9D /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 		4451311C2763024100DDCF9D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4451312D276317A400DDCF9D /* UserDefaultsManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				4451312C276312D900DDCF9D /* UIViewController+.swift in Sources */,
 				4451311E276302BA00DDCF9D /* NSObject+.swift.swift in Sources */,
 				4451312827630F0F00DDCF9D /* CellTapViewController.swift in Sources */,
+				4451312E276317A400DDCF9D /* UserDefaultsManager.swift in Sources */,
 				445131212763036100DDCF9D /* SaunaTableViewCell.swift in Sources */,
 				4451312427630CFE00DDCF9D /* ButtonTapViewController.swift in Sources */,
 				445130EC2762FEA200DDCF9D /* SceneDelegate.swift in Sources */,

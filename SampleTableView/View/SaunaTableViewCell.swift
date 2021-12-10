@@ -12,9 +12,7 @@ protocol SaunaTableViewCellDelegate {
 }
 
 final class SaunaTableViewCell: UITableViewCell {
-    
-    var locationBlock: (() -> Void)?
-    
+
     var delegate: SaunaTableViewCellDelegate?
     
     var setSaunaName = "" {
