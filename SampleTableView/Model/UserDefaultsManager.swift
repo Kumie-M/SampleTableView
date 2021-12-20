@@ -11,16 +11,18 @@ struct UserDefaultsKeys {
     static let isShowTutorialDialog = "isShowTutorialDialog"
 }
 
-struct UserDefaultsManager {
-    static let ud = UserDefaults.standard
+final class UserDefaultsManager {
+    private init() {
+    }
+    let ud = UserDefaults.standard
+    static let shared = UserDefaultsManager()
     /// チュートリアルダイアログ表示済判定
-    static func setDidShowTutorialDialog() {
+    func setDidShowTutorialDialog() {
         ud.set(true, forKey: UserDefaultsKeys.isShowTutorialDialog)
     }
     
     /// チュートリアルダイアログ表示判定
     /// - Returns: ダイアログが表示済だとtrue
-    static
     func isShowTutorialDialog() -> Bool {
         ud.bool(forKey: UserDefaultsKeys.isShowTutorialDialog)
     }
