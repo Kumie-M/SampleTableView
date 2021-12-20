@@ -34,7 +34,7 @@ final class SaunaViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        if !UserDefaultsManager.isShowTutorialDialog() {
+        if !UserDefaultsManager.shared.isShowTutorialDialog() {
             showAlert()
         }
     }
@@ -43,7 +43,7 @@ final class SaunaViewController: UIViewController {
         let alert = UIAlertController(title: "ようこそ！", message: "全国のサウナ情報をGETしよう！", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alert, animated: true, completion: nil)
-        UserDefaultsManager.setDidShowTutorialDialog()
+        UserDefaultsManager.shared.setDidShowTutorialDialog()
     }
 }
 
